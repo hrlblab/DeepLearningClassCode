@@ -19,9 +19,7 @@ Adapted from [Hello-Agents, Chapter 1.3](https://datawhalechina.github.io/hello-
 ```
 .
 ├── firstAgent.py          # The agent: prompt, tools, LLM client, main loop
-├── APIkeys.example.txt    # Template for your API keys
-├── APIkeys.txt            # Your real keys (create it yourself; ignored by git)
-├── .gitignore
+├── APIkeys.txt            # Your real keys (create it yourself)
 └── README.md
 ```
 
