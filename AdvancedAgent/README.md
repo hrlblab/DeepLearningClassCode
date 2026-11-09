@@ -1,6 +1,6 @@
 # Advanced: The Same Agent with LangChain, LangGraph and MCP
 
-This folder rebuilds the travel agent from [`five_miniutes/firstAgent.py`](../five_miniutes/firstAgent.py) with three widely used tools:
+This folder rebuilds the travel agent from [`Agent/firstAgent.py`](../Agent/firstAgent.py) with three widely used tools:
 
 | Tool | Role in this agent |
 |---|---|
@@ -16,9 +16,7 @@ The task is the same: check today's weather in Nashville, then recommend an attr
 advanced/
 ├── travel_mcp_server.py   # MCP server: exposes get_weather and get_attraction
 ├── langgraph_agent.py     # LangGraph agent: loads tools from the server and runs the loop
-├── APIkeys.example.txt    # Template for your API keys
-├── APIkeys.txt            # Your real keys (create it yourself; ignored by git)
-├── .gitignore
+├── APIkeys.txt            # Your real keys (create it yourself)
 └── README.md
 ```
 
@@ -28,8 +26,6 @@ You need an [OpenRouter](https://openrouter.ai/keys) API key and a [Tavily](http
 
 ```bash
 pip install langchain langchain-openai langgraph langchain-mcp-adapters mcp tavily-python requests
-cd advanced
-cp APIkeys.example.txt APIkeys.txt   # then paste your own keys into APIkeys.txt
 python langgraph_agent.py
 ```
 
